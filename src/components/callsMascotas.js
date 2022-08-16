@@ -1,5 +1,6 @@
 import axios from "axios";
-// const URL = "https://crudcrud.com/api/9f9570622452477eb2d977ba1f2553c5/unicorns"
+const URL = "https://crudcrud.com/api/c11b4e17f5d94d30a80c93e94ecf7da2/unicorns"
+
 export const getMascotas = async () => {
   try {
     let data = await axios.get(`${URL}`);
@@ -9,7 +10,7 @@ export const getMascotas = async () => {
   }
 }; 
 export const postMascotas= async (dataInput) => {
-  console.log(dataInput);
+
   try {
     let data = await axios.post(`${URL}`, {
       dataInput,
@@ -21,7 +22,7 @@ export const postMascotas= async (dataInput) => {
 };
 
 export const putMascotas = async (id, dataInput) => {
-  // console.log(id, dataInput);
+;
   try {
     let data = await axios.put(`${URL}/${id}`, {
       dataInput,

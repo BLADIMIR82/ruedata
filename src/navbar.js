@@ -2,7 +2,7 @@ import React from "react";
 import { Link as LinkRouter } from "react-router-dom";
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary">
       <button
         className="navbar-toggler"
         type="button"
